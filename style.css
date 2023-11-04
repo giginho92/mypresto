@@ -1,0 +1,123 @@
+/* FONT FAMILY E COLORE DEL MIO BODY (nascondere la barra orizzontale) */
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* CSS RESET UL */
+ul, li {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: 0;
+    list-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5, .h1, .h2, .h3, .h4, .h5{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --Color-Y: rgb(255, 190, 10);
+    --Color-B: rgb(0, 0, 0);
+    --Color-G: rgb(110, 118, 125);
+    --Color-W: rgb(237, 237, 233); 
+}
+
+.text-Y{
+    color: var(--Color-Y);
+}
+.text-B{
+    color: var(--Color-B);
+}
+.text-G{
+    color: var(--Color-G);
+}
+
+.bg-Y{
+    background: var(--Color-Y);
+}
+.bg-B{
+    background: var(--Color-B);
+}
+.bg-G{
+    background: var(--Color-G);
+}
+
+/* NAVBAR CSS */
+.nav-costum{
+    background: var(--Color-Y);
+}
+
+.img-runnersB{
+    height: 60px;
+    width: 70px;
+}
+
+.nav-link{
+    color: var(--Color-B)
+}
+.nav-link:hover{
+    color: var(--Color-W);
+    font-weight: bolder;
+}
+.icon-cursor{
+    cursor: pointer;
+}
+
+.my-bg{
+    background-image: url(./media/header.jpg);
+    
+    min-height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sport-categories i{
+    color: var(--Color-B);
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+
+}
+
+.sport-categories{
+    width: 40vw;
+    margin-bottom: 50px;
+}
+
+.sport-categories li{
+    background-color: var(--Color-Y);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.sport-categories li:hover{
+    border: 4px solid var(--Color-B)
+    
+}
+
+.sport-categories li:hover i{
+    font-size: 2.2em;
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.myimage img{
+    border-radius: 50%;
+    border: 4px solid var(--Color-B);
+
+}
